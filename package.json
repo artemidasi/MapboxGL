@@ -1,0 +1,51 @@
+{
+  "name": "template",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "turbo vite.build",
+    "dev": "turbo vite.dev",
+    "lint": "tsc",
+    "prepare": "is-ci || husky install",
+    "preview": "turbo vite.preview",
+    "vite.build": "vite build",
+    "vite.dev": "vite --host",
+    "vite.preview": "vite preview"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,cjs}": [
+      "prettier --write"
+    ],
+    "*.{md,html,css,json,yml}": "prettier --write",
+    "package.json": "pnpm sort-package-json"
+  },
+  "dependencies": {
+    "mapbox-gl": "^3.1.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.21.3",
+    "tilg": "0.1.1"
+  },
+  "devDependencies": {
+    "@total-typescript/ts-reset": "0.5.1",
+    "@types/mapbox-gl": "^2.7.20",
+    "@types/node": "20.11.15",
+    "@types/react": "18.2.50",
+    "@types/react-dom": "18.2.18",
+    "@vitejs/plugin-react-swc": "3.6.0",
+    "autoprefixer": "10.4.17",
+    "husky": "9.0.7",
+    "is-ci": "3.0.1",
+    "lightningcss": "1.23.0",
+    "lint-staged": "15.2.1",
+    "postcss": "8.4.33",
+    "prettier": "3.2.4",
+    "prettier-plugin-packagejson": "2.4.10",
+    "sort-package-json": "2.7.0",
+    "turbo": "1.12.2",
+    "typescript": "5.3.3",
+    "vite": "5.0.12",
+    "vite-plugin-mkcert": "1.17.3",
+    "vite-tsconfig-paths": "4.3.1"
+  }
+}
