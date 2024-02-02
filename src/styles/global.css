@@ -1,1 +1,27 @@
-.map-container{ width: 100vw;height: 100vh;}
+body,html{ height: 100%;width: 100%;overflow: hidden;}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.map-container{ width: 100%;height: 100vh;}
+.control{display: grid; gap: 10px; position: absolute;top: 20px;right: 20px;}
+.buttons{ display: grid;gap: 10px; padding: 10px;  background-color: white; border: 1px solid black; border-radius: 7px;}
+.button{ padding: 10px;background-color: #8895f5;border: 1px solid #000;border-radius: 7px;cursor: pointer;}
+.line-buttons{ display: grid;grid-template-columns: repeat(2,1fr);gap: 10px;}
+.cursor{ cursor: pointer;}
+
+.fieldset {
+  display: grid;
+
+  gap: 10px;
+}
+
+.checkbox {
+  margin-right: 5px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}

@@ -1,51 +1,20 @@
-# React Template（⚡️）
+## Тестовое задание
 
-⚡️ A minimal React Vite starter template.
+### Используемые библиотеки и сборщики
 
-## Feature
+- Vite - разработка и сборка проекта
+- React 18 - фрейморк для построения общей логики приложения
+- mapbox-gl - библиотека для работы с картой (отображения, изменения геометрии и т.д.)
+- react-uuid - библиотека для генерирования уникального ключа
 
-- ⚡️ Fast - Build tools based on vite.
-- 👻 Small - Based on the smallest runnable build.
-- 💄 Prettier - Integrated Prettier to help you format the code.
-- ✅ Safety - Https is enabled by default.
-- 😎 Reliable - Integrated eslint and commitlint.
-- 🤖 Intelligent - Integrated renovate to help you maintain the dependent version.
-
-## Preview
-
-[![qekup8.png](https://s1.ax1x.com/2022/03/20/qekup8.png)](https://imgtu.com/i/qekup8)
-
-## Getting Started
+## Просмотр тестового задания
 
 ```bash
-npx degit lzm0x219/template-vite-react myapp
+git clone https://github.com/artemidasi/MapboxGL.git
 
-cd myapp
+cd MapboxGL
 
-git init
+npm init
+
+npm run dev | npm run vite.dev
 ```
-
-### Prerequisites
-
-- `npm` and `pnpm` should be installed.
-- `git` should be installed (recommended v2.4.11 or higher)
-
-### Available scripts
-
-#### `pnpm dev`
-
-Runs the app in development mode.
-Open https://localhost:5173 to view it in the browser.
-
-The page will automatically reload if you make changes to the code.
-You will see the build errors and lint warnings in the console.
-
-#### `pnpm build`
-
-Builds the app for production to the `dist` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-
-Your app is ready to be deployed.
-# MapboxGL
