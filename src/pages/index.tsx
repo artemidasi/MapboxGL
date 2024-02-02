@@ -13,10 +13,6 @@ const BasePage: React.FC = () => {
 
   const map = mapRef.current;
 
-  const [lng, setLng] = React.useState(-122.486052);
-  const [lat, setLat] = React.useState(37.830348);
-  const [zoom, setZoom] = React.useState(14);
-
   const [lines, setLines] = React.useState<Array<{
     line: Line,
     callback: (event: mapboxgl.MapMouseEvent) => void
@@ -187,11 +183,13 @@ const BasePage: React.FC = () => {
 
     if (mapRef.current || !mapContainer) return;
 
+    const center: mapboxgl.LngLatLike = [-122.486052, 37.830348]
+
     mapRef.current = new mapboxgl.Map({
       container: mapContainer,
       style: 'mapbox://styles/mapbox/streets-v12',
-      center: [lng, lat],
-      zoom
+      center,
+      zoom: 14
     });
   }, []);
 
