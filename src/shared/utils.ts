@@ -35,7 +35,7 @@ export const getNewPoint = (coordinates: number[]) => {
   return newLine
 }
 
-export const getCreatedDate = (date: Date = new Date()) => {
+export const getCreatedDate = (date: Date) => {
   return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`
 }
 

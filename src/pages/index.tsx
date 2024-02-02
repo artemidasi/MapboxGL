@@ -92,10 +92,12 @@ const BasePage: React.FC = () => {
     if (newLine && map) {
       const id = newLine.properties.id
 
+      const now = new Date();
+
       const drawPopup = ({ lngLat }: mapboxgl.MapMouseEvent) => {
         new mapboxgl.Popup()
           .setLngLat(getCoordinateFromLngLat(lngLat))
-          .setHTML(`Линия создана: ${getCreatedDate()}`)
+          .setHTML(`Линия создана: ${getCreatedDate(now)}`)
           .addTo(map);
       }
 
@@ -123,10 +125,12 @@ const BasePage: React.FC = () => {
 
     const id = newPoint.properties.id;
 
+    const now = new Date();
+
     const drawPopup = ({ lngLat }: mapboxgl.MapMouseEvent) => {
       new mapboxgl.Popup()
         .setLngLat(getCoordinateFromLngLat(lngLat))
-        .setHTML(`Точка создана: ${getCreatedDate()}`)
+        .setHTML(`Точка создана: ${getCreatedDate(now)}`)
         .addTo(map);
     }
 
